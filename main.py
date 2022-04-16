@@ -37,6 +37,7 @@ def go(config: DictConfig):
             },
         )
 
+    # first step to implement, is processing data 
     if "preprocess" in steps_to_execute:
         _ = mlflow.run(
             os.path.join(root_path, "preprocess"),
@@ -49,6 +50,7 @@ def go(config: DictConfig):
             },
         )
 
+    # Tests are happenin
     if "check_data" in steps_to_execute:
         _ = mlflow.run(
             os.path.join(root_path, "check_data"),
@@ -60,6 +62,7 @@ def go(config: DictConfig):
             },
         )
 
+    # divide train and test 
     if "segregate" in steps_to_execute:
 
         _ = mlflow.run(
@@ -74,6 +77,7 @@ def go(config: DictConfig):
             },
         )
 
+    # train and validation step 
     if "random_forest" in steps_to_execute:
         # Serialize decision tree configuration
         model_config = os.path.abspath("random_forest_config.yml")
@@ -94,6 +98,7 @@ def go(config: DictConfig):
             },
         )
 
+    # taking inference artifact and test it against test data set 
     if "evaluate" in steps_to_execute:
 
         _ = mlflow.run(
