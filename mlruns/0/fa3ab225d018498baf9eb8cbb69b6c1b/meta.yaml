@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ashrafalgumaei/MyRepos/genre_classification/mlruns/0/fa3ab225d018498baf9eb8cbb69b6c1b/artifacts
+end_time: 1650140136155
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: fa3ab225d018498baf9eb8cbb69b6c1b
+run_uuid: fa3ab225d018498baf9eb8cbb69b6c1b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1650140129566
+status: 4
+tags: []
+user_id: ashrafalgumaei
